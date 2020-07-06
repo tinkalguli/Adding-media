@@ -109,3 +109,59 @@ Unlike the audio video also need fallbacks.
   Please <a href="earth.mp4" download>download</a> the video.
 </video>
 ```
+
+## Embeding Video
+
+We can embed a video from "YouTube" or "Vimeo". These websites allow us upload our videos, and allow us to embed our video on a page using inline frame.
+
+```
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/668nUCeBHyY"
+  frameborder="0"
+  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+></iframe>
+```
+
+### Inline Frames
+
+Inline frame element allow us to embed another HTML page within the current page. To do this ```<iframe>``` tag is used. To add the path of the video, src attribute is used which accepts value in url, which load the page with embeded content. Mainly the iframe element is used to embed media from external websites like YouTube, Google Maps, and others.By default the iframe element comes with default styles like border, width and height. The iframe tag accepts few set of attributes such as frameborder, width, and height, that can be used to style. It can also be styled using CSS properties and value.
+
+```
+<iframe
+  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3375.919684030991!2d76.3514099151738!3d32.20639478114809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1589823959436!5m2!1sen!2sin"
+  width="600"
+  height="450"
+  frameborder="0"
+  allowfullscreen=""
+  aria-hidden="false"
+  tabindex="0"
+></iframe>
+```
+
+### Figure & Figcaption
+
+The ```<figure>``` and ```<figcaption>``` are newly introduced element to semantically markup self contained content or media.
+
+#### Figure
+
+The ```<figure>``` is block-level element that can wrap self contained element specially media. The element like, images, audio, videos, diagrams, illustrations, etc can be nested inside ```<figure>``` tag.
+
+```
+<figure>
+  <img src="football.jpg" alt="Two little kids are playing football together" />
+</figure>
+```
+
+#### Figurecaption
+
+To add a heading or caption inside ```<figure>``` element ```<figcaption>``` tag is used. If we use <figcaption> inside <figure> element then we can avoid alt attribute inimg element.
+
+```
+<figure>
+  <figcaption>Two little kids are playing football together</figcaption>
+  <img src="football.jpg" />
+</figure>
+```
